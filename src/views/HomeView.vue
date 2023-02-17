@@ -1,10 +1,12 @@
 <template>
   <div class="home-page">
     <div class="left">
-      
+      <ConversationContainer></ConversationContainer>
     </div>
     <div class="right">
-      <div v-if="false"></div>
+      <div v-if="true">
+        <ChatWindow></ChatWindow>
+      </div>
       <div class="no-conversation" v-else>
         <img src="../assets//image/R-C.jpg" alt="" class="zw-picture">
         <!-- <span>打开新蓝领的窗户</span> -->
@@ -18,15 +20,18 @@
 
 <script>
 /* import {getUserInfo} from '@/api/user' */
+import ConversationContainer from './conversation/ConversationContainer.vue'
+import ChatWindow from './chat/ChatWindow.vue'
 export default {
   name: 'HomeView',
+  components:{
+    ConversationContainer,
+    ChatWindow
+  },
   data() {
     return {
       userId: 11
     }
-  },
-  components: {
-    
   },
   /* async mounted() {
     const result = await getUserInfo(this.userId)
@@ -45,15 +50,15 @@ export default {
   width: 100%;
   height: 100%;
   display: flex;
+  background-color: rgb(177, 236, 236);
   .left{
     width: 30%;
     height: 100%;
-    background-color: aliceblue;
+    
   }
   .right{
     width: 70%;
     height: 100%;
-    background-color: rgb(111, 162, 206);
     padding: 0;
     .no-conversation{
       width: 100%;

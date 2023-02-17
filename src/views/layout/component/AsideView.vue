@@ -47,7 +47,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .aside {
-  background-color: rgb(177, 236, 236);
+  background-color: rgb(141, 206, 206);
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -31,11 +31,11 @@ export default {
     height: 80%;
     position: relative;
     background-color: rgb(223, 244, 244);
-    opacity: 0.7;
-    padding-left: 4.8%;
+    opacity: 0.8;
+    padding-left: 4.3%;
     box-sizing: border-box;
     aside{
-        width: 8%;
+        width: 7%;
         height: 100%;
         position: absolute;
         left: 0;
